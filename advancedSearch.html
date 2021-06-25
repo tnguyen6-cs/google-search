@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <style>
+            body {
+                text-align: left;
+                font-family:sans-serif;
+                font-size: 10pt;
+            }
+           
+            div { 
+                display: table-row;  
+            }
+            label { 
+                display: table-cell; 
+            }
+            
+            form {
+                display: inline-block;
+                margin-top:100px;
+                margin-left: 20px;
+                display: table;
+            }
+
+            .right {
+                text-align: right;
+                position: absolute;
+                top: 0;
+                right:20px;
+
+            }
+            .submit {
+                background-color:lightgray;
+                padding: 10px;
+                border: 0px;
+                position: absolute;
+
+                background: rgba(0, 151, 19, 0.3);
+            }
+
+            #search {
+                top:55%;
+                left: 50%;
+                transform: translate(-50%,0); 
+                background-color:dodgerblue;
+                color:white;
+                border: 1px solid black;
+
+                
+            }
+    
+            #logo{
+                position: fixed;
+                left:-40px;
+                top:-20px;
+                height:100px;
+                width: auto;
+                mix-blend-mode: multiply;
+            }
+            label {
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+            #adv {
+                color:crimson;
+                position: fixed;
+                top: 75px;
+                left: 20px;
+                font-size: 18pt;
+            }
+
+            #line {
+                position: fixed;
+                top: 100px;
+            }
+
+            button {
+                text-align: right;
+                position: absolute;
+                top: 10px;
+                right:20px;
+            }
+
+        </style>
+    </head>
+    <body >
+        <img id="logo" src="https://storage.googleapis.com/gd-wagtail-prod-assets/original_images/evolving_google_identity_2x1.jpg" alt="photo description">
+        <div id="adv"> Advanced Search</div>
+        <hr id = "line" size="0.5" width="100%" color="lightgray">
+        <form action="https://www.google.com/search">
+            <h4>Find pages with...</h4>
+            <div>
+                <label for="allWords">all these words:</label>
+                <input type="text" id="allWords" name="as_q">
+            </div>
+            <br>
+            <div>
+                <label for="exact">this exact word or phrase:</label>
+                <input id="exact" type="text" name="as_epq">
+            </div>
+            <br>
+            <div>
+                <label for="any">any of these words:</label>
+                <input id="any"type="text" name="as_oq">
+            </div>
+            <br>
+            <div>
+                <label for="none">none of these words:</label>
+                <input id="none"type="text" name="as_eq">
+            </div>
+            <br>
+            <div>
+                <label for="startNum">numbers ranging from:</label>
+                <input id="startNum"type="text" name="as_nlo">
+                <label for="endNum">to:</label>
+                <input id="endNum"type="text" name="as_nhi">
+            </div>
+            <br>
+            
+            <input class="submit" id = "search" type="submit" value="Advanced Search">
+
+        </form>
+        
+        <form action="index.html">
+            <button type="submit">Back to search</button>
+        </form>
+
+    </body>
+</html>

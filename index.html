@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <style>
+            body {
+                background-image: url("bg.jpeg");
+                background-position: 50% 20%;
+            }
+               
+            
+            .left {
+                text-align: right;
+                position: absolute;
+                top: 0;
+                right:5px;
+
+            }
+            .submit {
+                background-color:lightgray;
+                padding: 10px;
+                border: 0px;
+                position: absolute;
+                background: rgba(0, 151, 19, 0.3);
+            }
+            #box {
+                width: 500px;
+                height: 30px;
+                border-radius: 25px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);  
+            }
+
+            #search {
+                top:55%;
+                left: 35%;
+
+            }
+
+            #lucky {
+                top: 55%;
+                right:35%;
+            }
+            #logo{
+                position:absolute;
+                top: 35%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                height:300px;
+                width: auto;
+                mix-blend-mode: multiply;
+            }
+
+        </style>
+    </head>
+    <body >
+       
+        <img id="logo" src="https://storage.googleapis.com/gd-wagtail-prod-assets/original_images/evolving_google_identity_2x1.jpg" alt="photo description" width="300">
+        <form action="https://google.com/search">
+            <input id = "box" type="text" name="q">
+            <input class="submit" id = "search" type="submit" value="Google Search">
+            <input class="submit" id="lucky" value="I'm Feeling Lucky" aria-label="I'm Feeling Lucky" name="btnI" type="submit" data-ved="0ahUKEwiNm6S0jYLrAhXslnIEHYv2B30QnRsIDg">
+        </form>
+        <p class="left" >
+            <a href="imageSearch.html" style="color:white" >Image search</a>
+            <a href="advancedSearch.html" style="color:white">Advanced search</a>
+        </p>
+    </body>
+</html>

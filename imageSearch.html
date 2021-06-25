@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <style>
+            body {
+                background-image: url("bg.jpeg");
+                background-position: 50% 20%;
+            }
+               
+            
+            .right {
+                text-align: right;
+                position: absolute;
+                top: 0;
+                right:20px;
+
+            }
+            .submit {
+                background-color:lightgray;
+                padding: 10px;
+                border: 0px;
+                position: absolute;
+
+                background: rgba(0, 151, 19, 0.3);
+            }
+            #box {
+                width: 500px;
+                height: 30px;
+                border-radius: 25px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);  
+            }
+
+            #search {
+                top:55%;
+                left: 50%;
+                transform: translate(-50%,0);  
+
+                
+            }
+    
+            #logo{
+                position:absolute;
+                top: 35%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                height:100px;
+                width: auto;
+                mix-blend-mode: multiply;
+            }
+
+        </style>
+    </head>
+    <body >
+       
+       
+        <img id="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Google_Images_2015_logo.svg/1200px-Google_Images_2015_logo.svg.png" alt="photo description" width="300">
+        <form action="http://images.google.com/images">
+            <input id = "box" type="text" name="q">
+            <input class="submit" id = "search" type="submit" value="Google Search">
+        </form>
+        <p class="right">
+            <a href="index.html" style="color:white">Back to search</a>
+        </p>
+
+    </body>
+</html>
